@@ -1,0 +1,192 @@
+﻿
+@{
+    ViewBag.Title = "ToDoList";
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Muammer Metin Profil</title>
+    <!-- for-mobile-apps -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Profile Widget Responsive, Login form web template, Sign up Web Templates, Flat Web Templates, Login signup Responsive web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <!-- //for-mobile-apps -->
+    <link href='~/web/fonts.googleapis.com/css?family=Poppins:400,600,500,700' rel='stylesheet' type='text/css'>
+    <link href="~/web/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="~/web/js/jquery-1.11.1.min.js"></script>
+    <!-- //js -->
+    <!-- Using Jquery -->
+    <script>
+    jQuery(document).ready(function($) {
+        $('#sidebar-btn').click(function() {
+            $('#sidebar').toggleClass('visible');
+        });
+    });
+    </script>
+    <!--circlechart-->
+    <script src="~/web/js/jquery.circlechart.js"></script>
+    <!--circlechart-->
+
+</head>
+<body>
+    <div class="content">
+        <h1>Profil Sayfam</h1>
+        <div class="main">
+            <div class="header">
+                <div class="hd-img">
+                    <img src="~/web/images/man.jpg" alt=" " class="img-responsive" />
+                </div>
+
+                <h2>Muammer Metin</h2>
+                <p class="photo">Junior Developer</p>
+                <div class="skill-info">
+                    <ul>
+                        <li><div class="demo demo-1" data-percent="70"></div><span>Yönetici</span></li>
+                        <li><div class="demo demo-2" data-percent="95"></div><span>Sigortacı</span> </li>
+                        <li><div class="demo demo-3" data-percent="30"></div><span>Yazılımcı</span> </li>
+                    </ul>
+                    <script>
+					$('.demo-1').percentcircle({
+						animate : true,
+						fillColor: 'rgb(119, 161, 173)'
+					});
+						$('.demo-2').percentcircle({
+						animate : true,
+						fillColor: 'rgb(0, 197, 255)'
+					});
+						$('.demo-3').percentcircle({
+						animate : true,
+						fillColor: 'rgb(119, 221, 255)'
+					});
+                    </script>
+                </div>
+            </div>
+            <section class="slider">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <div class="header-bottom_3">
+                                <div class="jan">
+                                    <h3>Deneyimlerim</h3>
+                                </div>
+                                <div class="jan-bottom">
+                                    <div class="jan-bottom-grid">
+
+                                        <div class="jan-bottom-grid-left1">
+                                            <p>Kamil Koç Turizm</p>
+                                        </div>
+                                        <div class="jan-bottom-grid-right">
+                                            <p>2015-2016</p>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="jan-bottom-grid">
+
+                                        <div class="jan-bottom-grid-left1">
+                                            <p>Üzüm Sigorta</p>
+                                        </div>
+                                        <div class="jan-bottom-grid-right">
+                                            <p>2016-2017</p>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="jan-bottom-grid">
+
+                                        <div class="jan-bottom-grid-left1">
+                                            <p>Özser Sigorta</p>
+                                        </div>
+                                        <div class="jan-bottom-grid-right">
+                                            <p>2017-2018</p>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="jan-bottom-grid">
+
+                                        <div class="jan-bottom-grid-left1">
+                                            <p>Turanlı Sigorta</p>
+                                        </div>
+                                        <div class="jan-bottom-grid-right">
+                                            <p>2018-2020</p>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="header-bottom_3">
+                                <div class="jan">
+                                    <h3>Deneyimlerim</h3>
+                                </div>
+                                <div class="jan-bottom">
+                                    <div class="jan-bottom-grid">
+
+                                        <div class="jan-bottom-grid-left1">
+                                            <p>Konya Şehir Hastanesi</p>
+                                        </div>
+                                        <div class="jan-bottom-grid-right">
+                                            <p>2020-2022</p>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+
+                                    <div class="jan-bottom-grid">
+
+                                        <div class="jan-bottom-grid-left1">
+                                            <p>Yöntem Okulları</p>
+                                        </div>
+                                        <div class="jan-bottom-grid-right">
+                                            <p>2022-2023</p>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="jan-bottom-grid">
+
+                                        <div class="jan-bottom-grid-left1">
+                                            <p>Şen Rot Balans</p>
+                                        </div>
+                                        <div class="jan-bottom-grid-right">
+                                            <p>2023-2023</p>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    @*<div class="jan-bottom-grid">
+
+                                        <div class="jan-bottom-grid-left1">
+                                            <p>Dinner</p>
+                                        </div>
+                                        <div class="jan-bottom-grid-right">
+                                            <p>9 PM</p>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>*@
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!--FlexSlider-->
+            <link rel="stylesheet" href="~/web/css/flexslider.css" type="text/css" media="screen" />
+            <script defer src="~/web/js/jquery.flexslider.js"></script>
+            <script type="text/javascript">
+								$(window).load(function(){
+								  $('.flexslider').flexslider({
+									animation: "slide",
+									start: function(slider){
+									  $('body').removeClass('loading');
+									}
+								  });
+								});
+            </script>
+            <!--End-slider-script-->
+        </div>
+        <p class="footer">&copy; @DateTime.Now.Year | Design by Muammer Metin <a href="#"> </a></p>
+    </div>
+
+</body>
+</html>
